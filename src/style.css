@@ -1,0 +1,103 @@
+body{
+    display:grid;
+    grid-template-rows: 15vh 85vh;
+}
+
+.main_page{
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    background-color: red;
+}
+/* Side Bar Start */
+.side_bar{
+    display: grid;
+    grid-template-rows: 80vh 20vh;
+    background-color: blue;
+
+}
+
+.project_section{
+    background-color:  orange;
+}
+
+.project_list{
+    list-style-type: none;
+}
+
+.add_new{
+    display: flex;
+    background-color: indigo;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Side Bar end */
+
+/* Add New Pop up Start */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #999;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+#popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #F9DFAF;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    /*Half the value of width to center div*/
+    margin-top: -250px;
+    /*Half the value of height to center div*/
+    z-index: 200;
+}
+
+/* Add New pop up End */
+
+/* Main List Start */
+
+.to_do_list{
+    display:flex;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_list{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    background-color: aqua;
+}
+
+.to_do_item_list {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr 0.5fr;
+
+}
+
+.to_do_item_list li {
+    list-style: none;
+    display: inline;
+}
+
+.to_do_item_box {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    grid-row-gap: 1%;
+    width:100%;
+}
