@@ -56,15 +56,71 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    background: #F9DFAF;
-    width: 500px;
+    background: #f9d6af;
+    width: 300px;
     height: 500px;
-    margin-left: -250px;
+    margin-left: -120px;
     /*Half the value of width to center div*/
     margin-top: -250px;
     /*Half the value of height to center div*/
     z-index: 200;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
 }
+
+.add_new_options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#add_new_dropdown {
+    display: inline-block;
+    width: 10em;
+}
+
+#add_new_label {
+    display: inline-block;
+    width: 10em;
+    margin-right: .5em;
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+.new_project_div {
+    /* display:flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+#project_label{
+    display: block;
+    margin-left: 25%;
+
+}
+
+#project_input{
+    display: block;
+    margin-left: 25%;
+}
+
+
+
+
+.project_submit_button_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+
+}
+
+.project_submit_button{
+    display:block;
+}
+
+
 
 /* Add New pop up End */
 

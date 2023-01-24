@@ -16,11 +16,12 @@ import new_project from './new_project.js'
 
 function pop_up(){
 
-    const pop_up = document.getElementById('popup')
+    const pop_up_add_new = document.getElementById('add_new_details')
 
     new_project()
 
-    return pop_up
+    return 
 }
 
-document.body.appendChild(pop_up());
+pop_up()
+
