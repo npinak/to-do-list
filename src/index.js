@@ -1,27 +1,15 @@
 // import _ from 'lodash';
 import './style.css'; // import css style sheet 
-import new_project from './new_project.js'
+import new_project from './new_project.js';
+import close_popup from './close_popup.js';
+import open_popup from './open_popup.js';
 
+// add event listener to pop-up close button 
+document.getElementById("close_popup").onclick = close_popup;
 
-// function component() {
-//     const element = document.createElement('div');
+// add event listener to add new project button (popup open button)
+document.getElementById("add_new_button").onclick = open_popup;
 
-//     // Lodash, now imported by this script
-//     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+document.getElementById("submit_project").onclick = new_project;
 
-//     return element;
-// }
-
-// document.body.appendChild(component());
-
-function pop_up(){
-
-    const pop_up_add_new = document.getElementById('add_new_details')
-
-    new_project()
-
-    return 
-}
-
-pop_up()
 
